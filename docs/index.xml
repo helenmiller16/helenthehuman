@@ -13,6 +13,16 @@
     
     
     <item>
+      <title>How I made it</title>
+      <link>https://helenthehuman.com/how-i-made-it/</link>
+      <pubDate>Wed, 31 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://helenthehuman.com/how-i-made-it/</guid>
+      <description>I made a site and published it. The proof is that you&amp;rsquo;re reading this. I&amp;rsquo;ve been meaning to do this for a while, and it turned out to be not too hard. Here&amp;rsquo;s what I did:
+  I chose Hugo as a static site generator, because that&amp;rsquo;s what blogdown uses, which I might decide to use some day. If I don&amp;rsquo;t, I might change to jekyll, since it has some nice integrations with github pages.</description>
+    </item>
+    
+    <item>
       <title>Nothing to see here...</title>
       <link>https://helenthehuman.com/nothing-to-see-here.../</link>
       <pubDate>Wed, 31 Mar 2021 00:00:00 +0000</pubDate>
