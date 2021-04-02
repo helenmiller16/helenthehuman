@@ -2,41 +2,41 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Helen The Human</title>
-    <link>https://helenthehuman.com/</link>
+    <link>https://www.helenthehuman.com/</link>
     <description>Recent content on Helen The Human</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2020, Helen MIller.</copyright>
-    <lastBuildDate>Wed, 31 Mar 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 01 Apr 2021 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://helenthehuman.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.helenthehuman.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>How I made it</title>
-      <link>https://helenthehuman.com/how-i-made-it/</link>
-      <pubDate>Wed, 31 Mar 2021 00:00:00 +0000</pubDate>
+      <link>https://www.helenthehuman.com/how-i-made-it/</link>
+      <pubDate>Thu, 01 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://helenthehuman.com/how-i-made-it/</guid>
-      <description>I made a site and published it. The proof is that you&amp;rsquo;re reading this. I&amp;rsquo;ve been meaning to do this for a while, and it turned out to be not too hard. Here&amp;rsquo;s what I did:
+      <guid>https://www.helenthehuman.com/how-i-made-it/</guid>
+      <description>I made a site and published it. The proof is that you&amp;rsquo;re reading this. I&amp;rsquo;ve been meaning to do this for a while because I&amp;rsquo;ve heard that having a personal website can be useful, and it turned out to be not too hard. Here&amp;rsquo;s what I did:
   I chose Hugo as a static site generator, because that&amp;rsquo;s what blogdown uses, which I might decide to use some day. If I don&amp;rsquo;t, I might change to jekyll, since it has some nice integrations with github pages.</description>
     </item>
     
     <item>
       <title>Nothing to see here...</title>
-      <link>https://helenthehuman.com/nothing-to-see-here.../</link>
+      <link>https://www.helenthehuman.com/nothing-to-see-here.../</link>
       <pubDate>Wed, 31 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://helenthehuman.com/nothing-to-see-here.../</guid>
+      <guid>https://www.helenthehuman.com/nothing-to-see-here.../</guid>
       <description>This is a preview of what it will look like when I write some content.</description>
     </item>
     
     <item>
       <title>About</title>
-      <link>https://helenthehuman.com/about/</link>
+      <link>https://www.helenthehuman.com/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://helenthehuman.com/about/</guid>
+      <guid>https://www.helenthehuman.com/about/</guid>
       <description>This site uses the Hugo-bearblog theme, with some help from blogdown. Maybe some day I&amp;rsquo;ll write a post about how I did it. Enjoy.</description>
     </item>
     

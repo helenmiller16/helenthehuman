@@ -3,27 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://helenthehuman.com/</loc>
+    <loc>https://www.helenthehuman.com/</loc>
+    <lastmod>2021-04-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.helenthehuman.com/blog/</loc>
+    <lastmod>2021-04-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.helenthehuman.com/how-i-made-it/</loc>
+    <lastmod>2021-04-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.helenthehuman.com/nothing-to-see-here.../</loc>
     <lastmod>2021-03-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://helenthehuman.com/blog/</loc>
-    <lastmod>2021-03-31T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://helenthehuman.com/how-i-made-it/</loc>
-    <lastmod>2021-03-31T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://helenthehuman.com/nothing-to-see-here.../</loc>
-    <lastmod>2021-03-31T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://helenthehuman.com/about/</loc>
+    <loc>https://www.helenthehuman.com/about/</loc>
   </url>
   
 </urlset>

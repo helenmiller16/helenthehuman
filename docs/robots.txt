@@ -1,2 +1,2 @@
 User-Agent: *
-Sitemap: https://helenthehuman.com/sitemap.xml
+Sitemap: https://www.helenthehuman.com/sitemap.xml

@@ -1,10 +1,11 @@
 +++
 title = "How I made it"
-date = "2021-03-31"
+date = "2021-04-01"
 description = "How I built this site using hugo and github pages."
 tags = []
 +++
-I made a site and published it. The proof is that you're reading this. I've been meaning to do this for a while, and it turned out to be not too hard. Here's what I did: 
+
+I made a site and published it. The proof is that you're reading this. I've been meaning to do this for a while because I've heard that having a personal website can be useful, and it turned out to be not too hard. Here's what I did: 
 
 1. I chose Hugo as a static site generator, because that's what [blogdown](https://github.com/rstudio/blogdown) uses, which I might decide to use some day. If I don't, I might change to jekyll, since it has some nice integrations with github pages. 
 
