@@ -1,0 +1,82 @@
++++
+title = "Modeling Bunnies"
+date = "2021-04-10"
+description = "An experiment in using javascript to make a fun simulation and visualization, based on a basic predator-prey model."
+tags = []
+draft = "false"
++++
+
+<script src="https://code.angularjs.org/1.6.9/angular.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="/javascript/dependencies/lodash.min.js"></script>
+<script src="https://d3js.org/d3.v4.js"></script>
+
+
+<p>This is a little app I built a few years ago, 
+    and I figured I'd share it here. It's at the bottom, after all the words. 
+    It is inspired by a predator-prey model, represented by the 
+    <a href="https://en.wikipedia.org/wiki/Lotka%E2%80%93Volterra_equationsf">Lotka-Volterra 
+    equations</a>, a very simple set of differential equations 
+    which model how a predator species and prey species interact, 
+    resulting in a cyclical population pattern (when there are lots of 
+    predators, prey species population goes down, until they cannot sustain the predators 
+    anymore, at which point predator population goes down and prey goes up, 
+    so that they can sustain more predators, whose population increases again...). 
+    I simulate this system here, using stochastic instead of deterministic 
+    interactions. Red dots are predators, and green dots are 
+    prey. They could be foxes and rabbits, or rabbits and grass, or whatever 
+    you want. They move around randomly, die and reproduce sometimes (randomly), 
+    and when they run into each other the prey may get eaten. You can see the 
+    populations plotted over time below the habitat. 
+</p>
+<p>
+    There is another variable in play here not modeled in the Lotka-Volterra 
+    equations: space. This results in some interesting patterns appearing. Play 
+    around with the initial conditions and see what happens. 
+</p>
+<p>
+    It's a bit buggy and not super pretty. I might come back and update it now 
+    that I have superiour coding skills. It would be cool to allow you to 
+    mess around with parameters (how fast predators/prey die, get eaten, move, etc). 
+</p>
+
+<h2>The Thing</h2>
+
+
+<svg id="habitat" width="400px" height="400px"></svg>
+<div class="controllers">
+
+    Prey: <span id="preycount"></span>
+    <div class="slidecontainer">
+      <input type="range" min="0" max="100000" ng-model="MainCtrl.preyCount" class="slider" id="preyslider">
+    </div>
+
+    Predators: <span id="predatorcount"></span>
+    <div class="slidecontainer">
+        <input type="range" min="0" max="20000" ng-model="MainCtrl.predatorCount" class="slider" id="predatorslider">
+    </div>
+
+    <div class="buttons">
+        <button type="button" onclick="startAnimation()">start</button>
+        <button type="button" onclick="stopAnimation()">stop</button>
+        <button type="button" onclick="resetData()">reset</button>
+    </div>
+
+</div>
+<svg id="timeseries" width="400px" height="100px"></svg>
+
+<script src="/javascript/predator_prey_party.js"></script>
+
+<style>
+    .controllers {
+        display: inline-block;
+        position: absolute;
+        padding: 10px;
+    }
+    #habitat {
+        display: inline-block;
+    }
+    #timeseries {
+        border: 2px solid lightgray;
+    }
+</style>

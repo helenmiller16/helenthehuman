@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="https://www.helenthehuman.com/images/spiral.png" />
+<title>Modeling Bunnies | Helen The Human</title>
+<meta name="title" content="Modeling Bunnies" />
+<meta name="description" content="An experiment in using javascript to make a fun simulation and visualization, based on a basic predator-prey model." />
+<meta name="keywords" content="" />
+
+
+<meta property="og:title" content="Modeling Bunnies" />
+<meta property="og:description" content="An experiment in using javascript to make a fun simulation and visualization, based on a basic predator-prey model." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.helenthehuman.com/modeling-bunnies/" />
+<meta property="og:image" content="https://www.helenthehuman.com/images/share.png"/>
+<meta property="article:published_time" content="2021-04-10T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-04-10T00:00:00+00:00" /><meta property="og:site_name" content="Helen the human" />
+
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://www.helenthehuman.com/images/share.png"/>
+
+<meta name="twitter:title" content="Modeling Bunnies"/>
+<meta name="twitter:description" content="An experiment in using javascript to make a fun simulation and visualization, based on a basic predator-prey model."/>
+
+
+
+<meta itemprop="name" content="Modeling Bunnies">
+<meta itemprop="description" content="An experiment in using javascript to make a fun simulation and visualization, based on a basic predator-prey model.">
+<meta itemprop="datePublished" content="2021-04-10T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-04-10T00:00:00+00:00" />
+<meta itemprop="wordCount" content="268">
+<meta itemprop="image" content="https://www.helenthehuman.com/images/share.png"/>
+
+
+
+<meta itemprop="keywords" content="" />
+
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+  body {
+    font-family: Verdana, sans-serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: #fff;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: #444;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    color: #222;
+  }
+
+  a {
+    color: #3273dc;
+     
+  }
+
+  .title {
+    text-decoration: none;
+    border: 0;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: #f2f2f2;
+  }
+
+  pre code {
+    color: #222;
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap;
+    font-size: 14px;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: #222;
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+
+  .helptext {
+    color: #777;
+    font-size: small;
+  }
+
+  .errorlist {
+    color: #eba613;
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: #8b6fcb;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #333;
+      color: #ddd;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong,
+    b {
+      color: #eee;
+    }
+
+    a {
+      color: #8cc2dd;
+    }
+
+    code {
+      background-color: #777;
+    }
+
+    pre code {
+      color: #ddd;
+    }
+
+    blockquote {
+      color: #ccc;
+    }
+
+    textarea,
+    input {
+      background-color: #252525;
+      color: #ddd;
+    }
+
+    .helptext {
+      color: #aaa;
+    }
+  }
+
+</style>
+
+</head>
+
+<body>
+  <header><a href="/" class="title">
+  <h2>Helen The Human</h2>
+</a>
+<img src="/images/headshot.jpg" alt="Headshot" width=150px/>
+<nav><a href="/">Home</a>
+
+<a href="/about/">About</a>
+
+
+<a href="/blog">Blog</a>
+
+</nav>
+</header>
+  <main>
+
+<h1>Modeling Bunnies</h1>
+<p>
+  <i>
+    <time datetime='2021-04-10' pubdate>
+      10 Apr, 2021
+    </time>
+  </i>
+</p>
+
+<content>
+  
+<script src="https://code.angularjs.org/1.6.9/angular.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="/javascript/dependencies/lodash.min.js"></script>
+<script src="https://d3js.org/d3.v4.js"></script>
+
+
+<p>This is a little app I built a few years ago, 
+    and I figured I'd share it here. It's at the bottom, after all the words. 
+    It is inspired by a predator-prey model, represented by the 
+    <a href="https://en.wikipedia.org/wiki/Lotka%E2%80%93Volterra_equationsf">Lotka-Volterra 
+    equations</a>, a very simple set of differential equations 
+    which model how a predator species and prey species interact, 
+    resulting in a cyclical population pattern (when there are lots of 
+    predators, prey species population goes down, until they cannot sustain the predators 
+    anymore, at which point predator population goes down and prey goes up, 
+    so that they can sustain more predators, whose population increases again...). 
+    I simulate this system here, using stochastic instead of deterministic 
+    interactions. Red dots are predators, and green dots are 
+    prey. They could be foxes and rabbits, or rabbits and grass, or whatever 
+    you want. They move around randomly, die and reproduce sometimes (randomly), 
+    and when they run into each other the prey may get eaten. You can see the 
+    populations plotted over time below the habitat. 
+</p>
+<p>
+    There is another variable in play here not modeled in the Lotka-Volterra 
+    equations: space. This results in some interesting patterns appearing. Play 
+    around with the initial conditions and see what happens. 
+</p>
+<p>
+    It's a bit buggy and not super pretty. I might come back and update it now 
+    that I have superiour coding skills. It would be cool to allow you to 
+    mess around with parameters (how fast predators/prey die, get eaten, move, etc). 
+</p>
+
+<h2>The Thing</h2>
+
+
+<svg id="habitat" width="400px" height="400px"></svg>
+<div class="controllers">
+
+    Prey: <span id="preycount"></span>
+    <div class="slidecontainer">
+      <input type="range" min="0" max="100000" ng-model="MainCtrl.preyCount" class="slider" id="preyslider">
+    </div>
+
+    Predators: <span id="predatorcount"></span>
+    <div class="slidecontainer">
+        <input type="range" min="0" max="20000" ng-model="MainCtrl.predatorCount" class="slider" id="predatorslider">
+    </div>
+
+    <div class="buttons">
+        <button type="button" onclick="startAnimation()">start</button>
+        <button type="button" onclick="stopAnimation()">stop</button>
+        <button type="button" onclick="resetData()">reset</button>
+    </div>
+
+</div>
+<svg id="timeseries" width="400px" height="100px"></svg>
+
+<script src="/javascript/predator_prey_party.js"></script>
+
+<style>
+    .controllers {
+        display: inline-block;
+        position: absolute;
+        padding: 10px;
+    }
+    #habitat {
+        display: inline-block;
+    }
+    #timeseries {
+        border: 2px solid lightgray;
+    }
+</style>
+</content>
+<p>
+  
+</p>
+
+  </main>
+  <footer>Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear</a>
+</footer>
+
+    
+</body>
+
+</html>

@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2020, Helen MIller.</copyright>
-    <lastBuildDate>Thu, 01 Apr 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 10 Apr 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.helenthehuman.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Modeling Bunnies</title>
+      <link>https://www.helenthehuman.com/modeling-bunnies/</link>
+      <pubDate>Sat, 10 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.helenthehuman.com/modeling-bunnies/</guid>
+      <description>This is a little app I built a few years ago, and I figured I&#39;d share it here. It&#39;s at the bottom, after all the words. It is inspired by a predator-prey model, represented by the Lotka-Volterra equations, a very simple set of differential equations which model how a predator species and prey species interact, resulting in a cyclical population pattern (when there are lots of predators, prey species population goes down, until they cannot sustain the predators anymore, at which point predator population goes down and prey goes up, so that they can sustain more predators, whose population increases again.</description>
+    </item>
     
     <item>
       <title>How I made it</title>
