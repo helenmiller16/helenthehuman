@@ -2,14 +2,22 @@
 {}
 ---
 
-I am Helen and I made this site to share my thoughts with the world.
-Please explore my content in the links above.
+# About me
+I am a Master's student at the University of Washington in the 
+[Quantitative Ecology and Resource Management](https://quantitative.uw.edu/) (QERM) program. I am in the 
+[Ecosystem Biogeochemistry](https://ecosystembiogeochemistry.org/) lab, and study nutrient and carbon cycling 
+in the Lower Mekong Basin (in Southeast Asia). 
 
-I am Helen and I'm a human. 
+I am interested in using computational and statistical tools to understand 
+ecosystem processes and manage natural resources. Here are some specific areas of interest and expertise: 
 
-You can contact me directly via helenthehuman@gmail.com. 
+- Satellite remote sensing, especially for water quality
+- Ecosystem metabolism in rivers (estimating it using statistical models)
+- Spatial and temporal statistics
+- Modeling forest dynamics 
 
-See what coding things I'm working on at https://github.com/helenmiller16
+Email me if you want to talk with me about QERM or any of those things or anything else really!
 
-Follow me on twitter at https://twitter.com/helenthehuman
+# About this website
 
+This site uses the Hugo-bearblog theme, with some help from blogdown. I wrote a [blog post](/how-i-made-it/) about how I did it if you're interested. 

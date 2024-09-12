@@ -209,18 +209,80 @@
 </head>
 
 <body>
-  <header><a href="/" class="title">
-  <h2>Helen The Human</h2>
-</a>
-<img src="/images/headshot.jpg" alt="Headshot" width=150px/>
-<nav><a href="/">Home</a>
+  <header>
+  <a href="/" class="title">
+    <h2 style="margin: 2px">Helen The Human</h2>
+  </a>
+  <hr>
+<div class="content-wrapper">
+  <img src="/images/headshot.jpg" alt="Headshot" class="responsive-image"/>
 
-<a href="/about/">About</a>
+  <div class="text-content">
+    <p>
+      I am Helen and I’m a human.
+    </p>
+    <p>
+      <a href='/blog' class='button-link'>blog</a>
+      <a href='mailto:helenrm64@gmail.com.' class='button-link'>email</a>
+      <a href=https://github.com/helenmiller16 class='button-link'>github</a>
+        <a href='https://www.linkedin.com/in/helen-miller-198348115/' class='button-link'>Linkedin</a>
+    </p>
+  </div>
+</div>
+
+<hr>
 
 
-<a href="/blog">Blog</a>
 
-</nav>
+<style>
+.content-wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+
+.responsive-image {
+  width: 25%;  
+  max-width: 100%;
+  height: auto;  
+}
+
+.text-content {
+  width: auto;  
+  padding-left: 20px;  
+}
+
+ 
+@media (max-width: 600px) {
+  .responsive-image {
+    width: 150px;  
+  }
+
+  .text-content {
+    width: calc(100% - 160px);  
+    padding-left: 10px;  
+  }
+}
+
+.button-link {
+  background: #961d46;
+  display: inline-block;
+  padding: 1px 3px;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  margin: 2px 0px;
+  font-family: 'Lato', sans-serif;
+}
+
+hr {
+  border: none;  
+  height: 2px;  
+  background-color: #9fa992;  
+}
+</style>
 </header>
   <main>
 

@@ -1,5 +1,74 @@
-<a href="{{ "/" | relURL }}" class="title">
-  <h2>{{ .Site.Title }}</h2>
-</a>
-<img src="/images/headshot.jpg" alt="Headshot" width=150px/>
-<nav>{{- partial "nav.html" . -}}</nav>
+
+  <a href="{{ "/" | relURL }}" class="title">
+    <h2 style="margin: 2px">{{ .Site.Title }}</h2>
+  </a>
+  <hr>
+<div class="content-wrapper">
+  <img src="/images/headshot.jpg" alt="Headshot" class="responsive-image"/>
+
+  <div class="text-content">
+    <p>
+      I am Helen and I’m a human.
+    </p>
+    <p>
+      <a href='/blog' class='button-link'>blog</a>
+      <a href='mailto:helenrm64@gmail.com.' class='button-link'>email</a>
+      <a href=https://github.com/helenmiller16 class='button-link'>github</a>
+        <a href='https://www.linkedin.com/in/helen-miller-198348115/' class='button-link'>Linkedin</a>
+    </p>
+  </div>
+</div>
+
+<hr>
+
+<!-- <nav>{{- partial "nav.html" . -}}</nav> -->
+
+<style>
+.content-wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+
+.responsive-image {
+  width: 25%; /* Image takes up 25% of the total width */
+  max-width: 100%;
+  height: auto; /* Maintain aspect ratio */
+}
+
+.text-content {
+  width: auto; /* Text takes up the remaining 75% of the total width */
+  padding-left: 20px; /* Space between the image and text */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+  .responsive-image {
+    width: 150px; /* Set the minimum width of the image */
+  }
+
+  .text-content {
+    width: calc(100% - 160px); /* Adjust text width to account for the image and padding */
+    padding-left: 10px; /* Reduce padding for smaller screens */
+  }
+}
+
+.button-link {
+  background: #961d46;
+  display: inline-block;
+  padding: 1px 3px;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  margin: 2px 0px;
+  font-family: 'Lato', sans-serif;
+}
+
+hr {
+  border: none; /* Removes the default border */
+  height: 2px; /* Sets the thickness of the line */
+  background-color: #9fa992; /* Sets the color of the line */
+}
+</style>

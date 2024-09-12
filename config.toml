@@ -3,7 +3,7 @@ languageCode = "en-us"
 title = "Helen The Human"
 theme="hugo-bearblog"
 author = "Helen Miller"
-copyright = "Copyright © 2020, Helen MIller."
+copyright = "Copyright © 2020, Helen Miller."
 
 # Generate a nice robots.txt for SEO
 enableRobotsTXT = true
