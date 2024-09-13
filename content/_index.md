@@ -20,4 +20,4 @@ Email me if you want to talk with me about QERM or any of those things or anythi
 
 # About this website
 
-This site uses the Hugo-bearblog theme, with some help from blogdown. I wrote a [blog post](/how-i-made-it/) about how I did it if you're interested. 
+This site uses the Hugo-bearblog theme. I wrote a [blog post](/how-i-made-it/) about how I set it up if you want to know. 
